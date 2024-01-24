@@ -1,0 +1,59 @@
+/* Estilos padrão para todos os dispositivos */
+
+body {
+    background-color: AliceBlue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: LightGray;
+    margin-top: 70px;
+}
+
+section {
+    position: relative; /* Mudança para relative para manter a posição no fluxo do documento */
+    border-radius: 40px;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%; /* Adição para garantir que a seção tenha largura total */
+}
+
+img {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+}
+
+.paragraph {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Configurações para telas menores (retrato) */
+@media (max-width: 375px) {
+    section {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .paragraph {
+        font-size: 14px;
+    }
+}
+
+/* Configurações para telas maiores (paisagem) */
+@media (min-width: 1440px) {
+    img {
+        max-width: 80%;
+        max-height: 100%;
+    }
+}
